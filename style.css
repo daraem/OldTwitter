@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    width: 350px;
+    height: 145px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+img {
+    width: 55px;
+    height: 50px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagen {
+    margin-top: 12px;
+}
+
+#contenedor {
+    margin-top: 10px;
+}
+
+#submit {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#Selector {
+    font-size: 20px;
+}
+
+.check {
+    font-size: 20px;
+}
+
+[type = radio] {
+    appearance: none;
+}
+
+[type = radio]:not(:checked) ~ label{
+    border: 1px solid black;
+    
+}
