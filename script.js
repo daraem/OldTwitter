@@ -1,5 +1,6 @@
 function executeAfterDelay() {
     setTimeout(function() {
+        console.log('x')
         let postear = document.getElementsByClassName("css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0");
         let verificacion = document.getElementsByClassName("css-1dbjc4n r-x572qd r-1d6w8o1 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
         let verificacionOsc = document.getElementsByClassName("css-1dbjc4n r-g2wdr4 r-14wv3jr r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
@@ -44,7 +45,7 @@ function executeAfterDelay() {
             if(verificacionOsc[0].firstChild.firstChild.firstChild.innerHTML == 'Subscribe to Premium' || verificacionOsc[0].firstChild.firstChild.firstChild.innerHTML == 'Suscríbete a Premium') {
                     verificacionOsc[0].remove();
             }
-        } else {
+        } else if (verificacionOscClara[0] != undefined){
             if(verificacionOscClara[0].firstChild.firstChild.firstChild.innerHTML == 'Subscribe to Premium' || verificacionOscClara[0].firstChild.firstChild.firstChild.innerHTML == 'Suscríbete a Premium') {
                 verificacionOscClara[0].remove();
         }
@@ -72,11 +73,12 @@ function executeAfterDelay() {
             }
         }
 
-
-        if(postReply[0].textContent == "¡Postea tu respuesta!"){
-            postReply[0].textContent = "¡Twittea tu respuesta!"
-        }else if(postReply[0].textContent == "Post your reply!"){
-            postReply[0].textContent = "Tweet your reply!"
+        if(postReply[0] != undefined) {
+            if(postReply[0].textContent == "¡Postea tu respuesta!"){
+                postReply[0].textContent = "¡Twittea tu respuesta!"
+            }else if(postReply[0].textContent == "Post your reply!"){
+                postReply[0].textContent = "Tweet your reply!"
+            }
         }
         if(logoDiv[0] != undefined) {
             for(let i = 0; i < logoDiv.length; i++) {
