@@ -1,6 +1,5 @@
 function executeAfterDelay() {
     setTimeout(function() {
-        console.log('x')
         let postear = document.getElementsByClassName("css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0");
         let verificacion = document.getElementsByClassName("css-1dbjc4n r-x572qd r-1d6w8o1 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
         let verificacionOsc = document.getElementsByClassName("css-1dbjc4n r-g2wdr4 r-14wv3jr r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
@@ -63,11 +62,13 @@ function executeAfterDelay() {
         } 
         if (verificacionBotonOLD[0] != undefined) {
             for(let i = 0; i < verificacionBotonOLD.length; i++){
-                if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verificado' || verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verified') {
-                    if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verificado') {
-                        verificacionBotonOLD[i].remove();
-                    }else if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verified') {
-                        verificacionBotonOLD[i].remove();
+                if(verificacionBotonOLD[i].firstChild.childNodes[1] != undefined) {
+                    if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verificado' || verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verified') {
+                        if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verificado') {
+                            verificacionBotonOLD[i].remove();
+                        }else if(verificacionBotonOLD[i].firstChild.childNodes[1].firstChild.innerHTML == 'Verified') {
+                            verificacionBotonOLD[i].remove();
+                        }
                     }
                 }
             }
