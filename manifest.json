@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Removing X from Twitter",
+    "version": "2.6",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
+    "permissions": [
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["http://www.twitter.com/*",
+                    "https://twitter.com/*",
+                    "http://www.x.com/*",
+                    "https://www.x.com/*",
+                    "http://x.com/*",
+                    "https://x.com/*"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "web_accessible_resources": [{
+      "matches": ["http://www.twitter.com/*",
+                  "https://twitter.com/*",
+                "http://www.x.com/*",
+              "https://www.x.com/*",
+            "http://x.com/*",
+          "https://x.com/*"],
+      "resources": ["logo.svg", "logoBlanco.png"]
+  }] 
+}

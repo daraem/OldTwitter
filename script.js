@@ -1,13 +1,13 @@
 function executeAfterDelay() {
     setTimeout(function() {
-        let postear = document.getElementsByClassName("css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0");
-        let verificacion = document.getElementsByClassName("css-1dbjc4n r-x572qd r-1d6w8o1 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
-        let verificacionOsc = document.getElementsByClassName("css-1dbjc4n r-g2wdr4 r-14wv3jr r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
-        let verificacionOscClara = document.getElementsByClassName("css-1dbjc4n r-g6ijar r-74htps r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
+        let postear = document.getElementsByClassName("css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3");
+        let verificacion = document.getElementsByClassName("css-175oi2r r-14lw9ot r-jxzhtn r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
+        let verificacionOsc = document.getElementsByClassName("css-175oi2r r-kemksi r-1kqtdi0 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
+        let verificacionOscClara = document.getElementsByClassName("css-175oi2r r-yfoy6g r-18bvks7 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x");
         let verificacionBotonOLD = document.getElementsByClassName("css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-rjfia r-13qz1uu");
         let verificacionBoton = document.getElementsByClassName("css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu");
         let postReply = document.getElementsByClassName("public-DraftEditorPlaceholder-inner");
-        let logoDiv = document.getElementsByClassName('css-901oao r-1awozwy r-18jsvk2 r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0');
+        let logoDiv = document.getElementsByClassName('css-146c3p1 r-bcqeeo r-qvutc0 r-37j5jr r-q4m81j r-a023e6 r-rjixqe r-b88u0q r-1awozwy r-6koalj r-18u37iz r-16y2uox r-1777fci');
         let logoDivOSC = document.getElementsByClassName('css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0');
         let icon = document.getElementsByTagName('link');
 
